@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --r-main-font: Lato, sans-serif;
+  --r-main-font-size: 20pt;
+  --r-heading-font: Lato, sans-serif;
+  --r-heading1-size: 2em;
+  --r-heading2-size: 1.75em;
+  --r-heading3-size: 1.5em;
+  --r-heading4-size: 1em;
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: unset;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: normal;
+  --r-heading1-text-shadow: none;
+  --r-block-margin: 1rem;
+  --r-heading-margin: 1rem;
+  --r-code-font: Fira Code;
+  --r-background-color: #002b36;
+  --r-main-color: #93a1a1;
+  --r-heading-color: #eee8d5;
+  --r-link-color: #268bd2;
+  --r-link-color-dark: #1a6091;
+  --r-link-color-hover: #78b9e6;
+  --r-selection-background-color: #d33682;
+  --r-selection-color: #fff;
+}
+
+.reveal p {
+  margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.reveal ul, .reveal ol {
+  display: block;
+}
+
+.center h1,
+.center p {
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  place-content: center;
+}
+
+.img-container img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.reveal pre {
+  font-size: 0.7em;
+}
+
+.reveal .slides section {
+  max-height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.reveal .slides section::-webkit-scrollbar {
+  display: none;
+}
+
+/* styling for running r chunks */
+
+.run-r {
+  margin: var(--r-block-margin) auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.r-editor {
+  min-height: 5em;
+  background-color: #fdf6e3;
+  color: #586e75;
+  margin-bottom: 0.5em;
+  font-family: Fira Code;
+  font-size: 0.7em;
+  padding: 0.5em;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.r-editor::-webkit-scrollbar {
+  display: none;
+}
+
+.r-submit {
+  width: 50px;
+}
+
+.r-output {
+  font-family: Fira Code;
+  font-size: 0.7em;
+  max-height: 4em;
+  overflow: auto;
+  margin-top: 1em;
+  text-align: left;
+  display: flex;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.r-output::-webkit-scrollbar {
+  display: none;
+}
+/* the credentials checking div */ 
+
+#titleslide {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  place-items: center;
+}
+
+#creds {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#creds input {
+  width: 100%;
+}
+
